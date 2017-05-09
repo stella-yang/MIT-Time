@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MIT Time</title>
+    <link href="https://fonts.googleapis.com/css?family=Consolas" rel="stylesheet">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+      <div id="preferences">
+      	<h1>MIT Time</h1>
+        <p>kerberos</p>
+        <form name="set-prefs" method="post" action="//iesc-s2.mit.edu/6S08dev/pengs/final/sb1.py">
+        	<input type="text" name="kerberos" placeholder="your kerberos" required><br>
+          <p>when do you need to be at class?</p>
+        	<input type="time" name="first-class" placeholder="9:00" required><br>
+          <p>how much time do you need to get ready?</p>
+        	<input type="number" name="prep-time" placeholder="minutes for prep" min="1" required><br>
+          <input type="submit" class="button" value="Submit">
+        </form>
+      </div>
+    </div>
+
+    </div>
+  
+  </body>
+</html>
