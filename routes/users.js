@@ -131,7 +131,7 @@ router.get('/logout', function(req, res){
 });
 
 router.get('/index', ensureAuthenticated, function(req, res){
-  res.render('index');
+  res.render('index', { user: req.user });
 });
 
 function ensureAuthenticated(req, res, next){

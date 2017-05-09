@@ -13,9 +13,9 @@
     <div class="container">
       <div id="preferences">
       	<h1>MIT Time</h1>
-        <p>kerberos</p>
+        <h2>Welcome, {{ user.username }}</h2>
         <form name="set-prefs" method="post" action="//iesc-s2.mit.edu/6S08dev/pengs/final/sb1.py">
-        	<input type="text" name="kerberos" placeholder="your kerberos" required><br>
+        	<input type="text" name="kerberos" value="{{ user.username }}" style="display:none" disabled><br>
           <p>when do you need to be at class?</p>
         	<input type="time" name="first-class" placeholder="9:00" required><br>
           <p>how much time do you need to get ready?</p>
