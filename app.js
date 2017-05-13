@@ -24,7 +24,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 //MongoDB Setup
-mongoose.connect('mongodb://localhost/mit_time');
+mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds155080.mlab.com:55080/heroku_wrnw9d91');
 var db = mongoose.connection;
 
 
