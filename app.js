@@ -4,7 +4,6 @@ var path = require('path');
 var http = require('http').Server(app);
 var exphbs = require('express-handlebars');
 var flash = require('connect-flash');
-var favicon = require('serve-favicon');
 
 //Login Stuff
 var bodyParser = require('body-parser');
@@ -14,7 +13,6 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var expressValidator = require('express-validator');
 var randomstring = require('randomstring');
-
 
 //Mongodb
 var mongo = require('mongodb');
